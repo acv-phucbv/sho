@@ -4,22 +4,19 @@
 <!--[if !IE]><!--> <html lang="{{ app()->getLocale() }}"> <!--<![endif]-->
 @include('layouts.partials.head')
 <body class="{{ isset($bodyClass) ? $bodyClass : 'page-header-fixed page-sidebar-closed-hide-logo page-content-white' }}">
-    <div class="page-wrapper">
-        {{--@include('layouts.partials.header')--}}
-        <div class="clearfix"> </div>
-        <div class="page-container">
-            {{--@include('layouts.partials.sidebar')--}}
-            <div class="page-content-wrapper">
-                <div class="page-content">
-                    {{--@include('partials.breadcrumbs')--}}
-                    <div class="clearfix margin-bottom-20"> </div>
-                    {{--@include('layouts.partials.messages')--}}
-                    @yield('content')
-                </div>
-            </div>
-        </div>
-        {{--@include('layouts.partials.footer')--}}
+    @include('layouts.partials.header')
+    <div class="clearfix"> </div>
+    @yield('slider')
+    <div class="clearfix"> </div>
+    <div class="container">
+        {{--@include('layouts.partials.sidebar')--}}
+{{--        @include('layouts.partials.breadcrumb')--}}
+        <div class="clearfix margin-bottom-20"> </div>
+        {{--@include('layouts.partials.messages')--}}
+        @yield('content')
     </div>
+
+    @include('layouts.partials.footer')
     @include('layouts.partials.javascript')
     @yield('inline_scripts')
 </body>

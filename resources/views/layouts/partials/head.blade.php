@@ -1,12 +1,12 @@
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>{{ env('APP_NAME') }} | @yield('title', trans('Page'))</title>
     <link rel="shortcut icon" href="favicon.ico"/>
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta content="" name="description"/>
     <meta content="" name="author"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {{-- BEGIN GLOBAL MANDATORY STYLES --}}
@@ -22,6 +22,7 @@
     {{-- END THEME GLOBAL STYLES --}}
     {{-- BEGIN THEME LAYOUT STYLES --}}
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/responsive/responsive.css') }}" rel="stylesheet" type="text/css" />
     {{-- END THEME LAYOUT STYLES --}}
 
     {{-- BEGIN PAGE LEVEL STYLES --}}

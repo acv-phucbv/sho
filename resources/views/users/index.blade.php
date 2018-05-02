@@ -1,5 +1,9 @@
 @extends('layouts.default')
 
+{{--@include('layouts.partials.breadcrumb', ['nodes' => [--}}
+    {{--['text' => trans('test')]--}}
+{{--]])--}}
+
 @section('content')
     <h1>
         {{ trans('List Users') }}

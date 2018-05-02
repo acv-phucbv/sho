@@ -1,23 +1,91 @@
-@extends('layouts.app')
+@extends('layouts.default')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+@section('slider')
+    <section class="welcome-post-sliders owl-carousel">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-1.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">May 19, 2017</a>
+                    <a href="#">5 Comment</a>
                 </div>
+                <a href="#">
+                    <h5>“I’ve Come and I’m Gone”: A Tribute to Istanbul’s Street</h5>
+                </a>
             </div>
         </div>
-    </div>
-</div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-2.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">May 19, 2017</a>
+                    <a href="#">5 Comment</a>
+                </div>
+                <a href="#">
+                    <h5>“I’ve Come and I’m Gone”: A Tribute to Istanbul’s Street</h5>
+                </a>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-3.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">May 19, 2017</a>
+                    <a href="#">5 Comment</a>
+                </div>
+                <a href="#">
+                    <h5>“I’ve Come and I’m Gone”: A Tribute to Istanbul’s Street</h5>
+                </a>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-4.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">May 19, 2017</a>
+                    <a href="#">5 Comment</a>
+                </div>
+                <a href="#">
+                    <h5>“I’ve Come and I’m Gone”: A Tribute to Istanbul’s Street</h5>
+                </a>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-4.jpg" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <div class="post-date-commnents d-flex">
+                    <a href="#">May 19, 2017</a>
+                    <a href="#">5 Comment</a>
+                </div>
+                <a href="#">
+                    <h5>“I’ve Come and I’m Gone”: A Tribute to Istanbul’s Street</h5>
+                </a>
+            </div>
+        </div>
+
+    </section>
+@endsection
+
+@section('content')
+
 @endsection
