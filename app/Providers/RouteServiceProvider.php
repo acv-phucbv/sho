@@ -17,6 +17,14 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
 
     /**
+     * List of domains
+     *
+     */
+    protected static $domains = [
+        'admin' => 'Admin',
+    ];
+
+    /**
      * Define your route model bindings, pattern filters, etc.
      *
      * @return void
@@ -54,6 +62,13 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
              ->namespace($this->namespace)
              ->group(base_path('routes/web.php'));
+
+        foreach (self::$domains as $route => $domain) {
+            Route::middleware('web')
+                 ->prefix($route)
+                 ->namespace(sprintf('%s\%s', $this->namespace, $domain))
+                 ->group(base_path(sprintf('routes/%s.php', $route)));
+        }
     }
 
     /**

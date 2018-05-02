@@ -11,7 +11,10 @@ class Controller extends AppController
      */
     public function __construct()
     {
-        parent::__construct();
-        $this->middleware('admin');
+        $this->middleware('auth');
+    }
+
+    public function index() {
+        return view('admin.index');
     }
 }

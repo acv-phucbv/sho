@@ -7,8 +7,8 @@
 @endsection
 
 @section('page_styles')
-    <link href="{{ asset('assets/pages/css/account.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/pages/css/util.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/account.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/util.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 
 @section('content')

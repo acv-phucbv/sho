@@ -5,7 +5,7 @@
                 <div class="footer-content">
                     <!-- Logo Area Start -->
                     <div class="footer-logo-area text-center">
-                        <a href="index.html" class="yummy-logo">Yummy Blog</a>
+                        <a href="{{ route('home') }}" class="yummy-logo">Yummy Blog</a>
                     </div>
                     <!-- Menu Area Start -->
                     <nav class="navbar navbar-expand-lg">
@@ -14,7 +14,7 @@
                         <div class="collapse navbar-collapse justify-content-center" id="yummyfood-footer-nav">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Features</a>
